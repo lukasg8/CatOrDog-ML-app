@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C3C2AC2290C407C00A29CE7 /* AnimalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C2AC1290C407C00A29CE7 /* AnimalRowView.swift */; };
 		6C460DE029088BF900B556EB /* Cat_or_Dog_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C460DDF29088BF900B556EB /* Cat_or_Dog_App.swift */; };
 		6C460DE229088BF900B556EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C460DE129088BF900B556EB /* ContentView.swift */; };
 		6C460DE429088BFB00B556EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C460DE329088BFB00B556EB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C3C2AC1290C407C00A29CE7 /* AnimalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRowView.swift; sourceTree = "<group>"; };
 		6C460DDC29088BF900B556EB /* Cat or Dog?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat or Dog?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C460DDF29088BF900B556EB /* Cat_or_Dog_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_or_Dog_App.swift; sourceTree = "<group>"; };
 		6C460DE129088BF900B556EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				6C460DDF29088BF900B556EB /* Cat_or_Dog_App.swift */,
 				6C460DE129088BF900B556EB /* ContentView.swift */,
+				6C3C2AC1290C407C00A29CE7 /* AnimalRowView.swift */,
 				6C460DED29088CE100B556EB /* Constants.swift */,
 				6C460DEF29088CF300B556EB /* MobileNetV2.mlmodel */,
 				6C460DF029088CF300B556EB /* sample.json */,
@@ -159,6 +162,7 @@
 				6C460DF129088CF300B556EB /* MobileNetV2.mlmodel in Sources */,
 				6C460DEE29088CE100B556EB /* Constants.swift in Sources */,
 				6C460DF429088D5100B556EB /* Animal.swift in Sources */,
+				6C3C2AC2290C407C00A29CE7 /* AnimalRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
