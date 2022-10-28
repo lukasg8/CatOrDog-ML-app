@@ -20,7 +20,9 @@ struct ContentView: View {
                 GeometryReader { geometry in
                     Image(uiImage: UIImage(data: model.animal.imageData ?? Data()) ?? UIImage())
                         .resizable()
-                        .frame(width: geometry.size.width)
+                        .scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.width)
+                        .clipped()
                         .edgesIgnoringSafeArea(.all)
                 }
                 
@@ -48,14 +50,15 @@ struct ContentView: View {
                             AnimalRowView(imageLabel: model.animal.results[index].imageLabel, confidence: model.animal.results[index].confidence)
                                 .id(index)
                         }
-                        .padding(.leading, 10)
-                        .padding(.trailing, 10)
+                        .padding(.leading, 5)
+                        .padding(.trailing, 5)
                     }
                 }
                 
             }
             .onAppear(perform: model.getAnimal)
             .opacity(model.animal.imageData == nil ? 0 : 1)
+            .animation(.easeIn)
         }
     }
 }

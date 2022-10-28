@@ -15,18 +15,24 @@ struct AnimalRowView: View {
     var body: some View {
         
         ZStack {
+            
             Rectangle()
                 .foregroundColor(.white)
                 .frame(height:48)
                 .cornerRadius(10)
             
-            HStack {
-                Text(imageLabel)
-                Spacer()
-                Text(String(format: "%.2f%%", confidence * 100))
+            VStack {
+                
+                HStack {
+                    Text(imageLabel)
+                    Spacer()
+                    Text(String(format: "%.2f%%", confidence * 100))
+                }
+                
+                ProgressBar(value: confidence)
+                
             }
         }
         .padding(.horizontal)
-        
     }
 }
